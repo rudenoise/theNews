@@ -1,5 +1,8 @@
 #! /bin/bash
 
+FILTER='and\>\|that\>\|but\>\|or\>\|as\>\|if\>\|when\>\|than\>\|because\>\|while\>\|where\>\|after\>\|so\>\|though\>\|since\>\|until\>\|whether\>\|before\>\|although\>\|nor\>\|like\>\|once\>\|unless\>\|now\>\|except'
+FILTER='$FILTER\>\|the'
+
 if [ -z "$1" ]; then
     echo "Usage:"
     echo "condense.sh [url]"
@@ -12,5 +15,6 @@ else
         tr -d '[:punct:]' | \
         sort | \
         uniq -c | \
-        sort
+        sort | \
+        grep -v -w $FILTER
 fi
