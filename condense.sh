@@ -1,7 +1,7 @@
 #! /bin/bash
 
-FILTER='and\>\|that\>\|but\>\|or\>\|as\>\|if\>\|when\>\|than\>\|because\>\|while\>\|where\>\|after\>\|so\>\|though\>\|since\>\|until\>\|whether\>\|before\>\|although\>\|nor\>\|like\>\|once\>\|unless\>\|now\>\|except'
-FILTER='$FILTER\>\|the'
+FILTER='and\>\|that\>\|but\>\|or\>\|as\>\|if\>\|when\>\|than\>\|because\>\|while\>\|where\>\|after\>\|so\>\|though\>\|since\>\|until\>\|whether\>\|before\>\|although\>\|nor\>\|like\>\|once\>\|unless\>\|now\>\|except\>\|the\>\|and\>\|by\>\|if\>\|in\>\|when\>\|where\>\|a\>\|to\>\|of\>\|the\>\|has\>\|un\>\|that\>\|as\>\|what\>\|where\>\|their\>\|are\>\|as\>\|also\>\|their\>\|more\>\|than\>\|this\>\|which\>\|be\>\|could'
+
 
 if [ -z "$1" ]; then
     echo "Usage:"
